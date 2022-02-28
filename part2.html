@@ -54,28 +54,53 @@
             <th>Season</th>
             <th>Points</th>
             <th>Position</th>
+            <th>Team</th>
         </tr>
         <tr>
             <td>Lewis Hamilton</td>
             <td>2021</td>
             <td>387.5</td>
             <td>2</td>
+            <td>Mercedes</td>
         </tr>
         <tr>
             <td>George Russel</td>
             <td>2021</td>
             <td>16</td>
             <td>15</td>
+            <td>Williams</td>
         </tr>
     </table>
     <br/>
     <fieldset>
-    <legend>Who is your favorite driver:</legend>
-    <form action="/action_page.php">
+    <legend>What is your favorite Driver and Team:</legend>
+    <form name="" id="" method="get">
         <label for="dname">Driver name:</label>
         <input type="text" id="dname" name="dname"><br><br>
+        <label for="Teams">Teams:</label>
+        <select name="Teams" id="Teams">
+            <option value="Mercedes">Mercedes</option>
+            <option value="RedBull">RedBull</option>
+            <option value="Meclaren">Meclaren</option>
+            <option value="Ferrari">Ferrari</option>
+        </select>
+        <br/><br/>
         <input type="submit" value="Submit">
       </form>
     </fieldset>
+    <br/>
+    <iframe 
+    width="560" height="315" src="https://www.youtube.com/embed/7dSTarz5dIw" 
+    title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+<form action="/action_page.php">
+<label for="userideas">Please give Feedback:</label>
+<br/>
+<textarea id="userideas" name="userideas" rows="4" cols="50"></textarea>
+<br/>
+<input type="submit" value="Submit">
+</form>
 </body>
 </html>
